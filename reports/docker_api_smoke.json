@@ -1,0 +1,46 @@
+{
+  "runtime_uid": 1000,
+  "health": {
+    "service": "ok",
+    "model_ready": true
+  },
+  "model_name": "xgboost",
+  "decision_threshold": 0.08875743796410022,
+  "single_status": 200,
+  "batch_status": 200,
+  "invalid_status": 422,
+  "single_prediction": {
+    "failure_probability": 0.005036781430332394,
+    "predicted_failure": false,
+    "decision_threshold": 0.08875743796410022,
+    "risk_score": 0.005036781430332394,
+    "risk_band": "LOW",
+    "maintenance_priority": "LOW",
+    "top_drivers": [
+      {
+        "feature": "torque_nm",
+        "value": 42.8,
+        "contribution": -2.8264734745025635,
+        "units": "base_model_log_odds"
+      },
+      {
+        "feature": "tool_wear_min",
+        "value": 125.0,
+        "contribution": -1.8064974546432495,
+        "units": "base_model_log_odds"
+      },
+      {
+        "feature": "air_temperature_k",
+        "value": 298.1,
+        "contribution": -1.6428890228271484,
+        "units": "base_model_log_odds"
+      }
+    ],
+    "operator_explanation": "Model failure probability is 0.5%; demonstration risk band LOW and review priority LOW. Strongest model attributions: torque_nm, tool_wear_min, air_temperature_k. Attribution is not causality. Review using approved manufacturer maintenance procedures.",
+    "inference_latency_ms": 7.220083999982307
+  },
+  "ranked_machine_ids": [
+    "b",
+    "a"
+  ]
+}

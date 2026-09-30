@@ -1,0 +1,42 @@
+{
+  "rows": 10000,
+  "missing_values": {
+    "UDI": 0,
+    "Product ID": 0,
+    "machine_type": 0,
+    "air_temperature_k": 0,
+    "process_temperature_k": 0,
+    "rotational_speed_rpm": 0,
+    "torque_nm": 0,
+    "tool_wear_min": 0,
+    "Machine failure": 0,
+    "TWF": 0,
+    "HDF": 0,
+    "PWF": 0,
+    "OSF": 0,
+    "RNF": 0
+  },
+  "duplicate_rows": 0,
+  "duplicate_identifiers": {
+    "UDI": 0,
+    "Product ID": 0
+  },
+  "target_prevalence": 0.0339,
+  "excluded_columns": [
+    "UDI",
+    "Product ID",
+    "TWF",
+    "HDF",
+    "PWF",
+    "OSF",
+    "RNF"
+  ],
+  "features": [
+    "machine_type",
+    "air_temperature_k",
+    "process_temperature_k",
+    "rotational_speed_rpm",
+    "torque_nm",
+    "tool_wear_min"
+  ]
+}

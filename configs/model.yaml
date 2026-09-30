@@ -1,0 +1,21 @@
+random_seed: 42
+data:
+  raw_path: data/raw/ai4i2020.csv
+  processed_path: data/processed/telemetry.csv
+  target_column: Machine failure
+split:
+  test_size: 0.15
+  validation_size: 0.15
+model:
+  target_metric: average_precision
+  cv_folds: 3
+threshold:
+  strategy: f2
+risk_policy:
+  low_max: 0.25
+  medium_max: 0.50
+  high_max: 0.75
+explanation:
+  mode: template
+service:
+  max_batch_size: 100

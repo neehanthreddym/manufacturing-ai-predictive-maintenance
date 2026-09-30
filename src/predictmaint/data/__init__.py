@@ -1,0 +1,1 @@
+"""Manufacturing failure detection POC."""

@@ -1,0 +1,47 @@
+{
+  "at_0_5": {
+    "threshold": 0.5,
+    "accuracy": 0.9873333333333333,
+    "precision": 0.7857142857142857,
+    "recall": 0.8627450980392157,
+    "f1": 0.822429906542056,
+    "f2": 0.8461538461538461,
+    "roc_auc": 0.9799456014289775,
+    "average_precision": 0.8909339562792883,
+    "false_negative_rate": 0.13725490196078433,
+    "confusion_matrix": [
+      [
+        1437,
+        12
+      ],
+      [
+        7,
+        44
+      ]
+    ],
+    "brier_score": 0.010468488360653068
+  },
+  "operational": {
+    "threshold": 0.08875743796410022,
+    "accuracy": 0.9653333333333334,
+    "precision": 0.4946236559139785,
+    "recall": 0.9019607843137255,
+    "f1": 0.6388888888888888,
+    "f2": 0.7744107744107744,
+    "roc_auc": 0.9799456014289775,
+    "average_precision": 0.8909339562792883,
+    "false_negative_rate": 0.09803921568627451,
+    "confusion_matrix": [
+      [
+        1402,
+        47
+      ],
+      [
+        5,
+        46
+      ]
+    ],
+    "brier_score": 0.010468488360653068
+  },
+  "evaluation_note": "Held-out test after validation-only selection; no refitting on validation/test."
+}

@@ -1,0 +1,87 @@
+# Local secrets and credentials; keep the reviewed settings template
+.env
+.env.*
+!.env.example
+.envrc
+.secrets/
+secrets/
+.aws/
+.azure/
+.ssh/
+.gnupg/
+.gcloud/
+credentials.json
+credentials-*.json
+service-account*.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# Python environments, bytecode, packaging and tool caches
+.venv/
+.venv.*/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.cache/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyright/
+.tox/
+.nox/
+.hypothesis/
+.ipynb_checkpoints/
+
+# Coverage output
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Personal interview and resume material
+/reports/interview_notes.md
+/reports/resume_bullets.md
+
+# Downloaded/processed data and executable model artifacts
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+artifacts/*
+!artifacts/.gitkeep
+*.joblib
+*.pkl
+*.pickle
+
+# Runtime logs, process files and temporary output
+logs/
+*.log
+*.pid
+*.pid.lock
+*.tmp
+*.temp
+*.bak
+
+# Editor and OS clutter
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# Intentionally tracked: reports/ (metrics, figures and project documentation),
+# assets/ (README screenshots), tests/fixtures/, configs/ and dependency locks.
